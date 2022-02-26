@@ -1,4 +1,5 @@
 # пример комментария
+# log/ - будет игнорироваться целая папка log
 .classpath
 .project
 .settings/
