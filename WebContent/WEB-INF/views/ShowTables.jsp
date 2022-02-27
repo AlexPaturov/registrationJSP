@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Будет просмотр содержимого любой таблицы</title>
+<title>Страница с выбором условий фильтрации </title>
 </head>
 <body>
 

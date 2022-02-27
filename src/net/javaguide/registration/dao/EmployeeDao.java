@@ -12,7 +12,7 @@ public class EmployeeDao {
     public int registerEmployee(Employee employee) throws ClassNotFoundException  {
         String INSERT_USERS_SQL = "INSERT INTO employee" +
             "  ( first_name, last_name, username, password, adress, contact) VALUES " +
-            " ( ?, ?, ?, ?,?,?);";
+            " ( ?, ?, ?, ?, ?, ?);";
 
         int result = 0;
         
