@@ -39,15 +39,14 @@
   </form>
  </div>
  
- 
-  <div align="left">
-  <%--<h1>Employee Register Form</h1>--%>
-  <form action="<%= request.getContextPath() %>/test" method="post">
+ <%-- <div align="left"> --%>
+  <%--  <h1>Employee Register Form</h1>--%>
+  <%-- <form action="<%= request.getContextPath() %>/test" method="post">
   
    <input type="submit" value="Show tables" />
   </form>
  </div>
- <%----%>
+ --%>
  
 </body>
 </html>

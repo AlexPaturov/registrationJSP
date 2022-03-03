@@ -32,10 +32,10 @@ public class EmployeeServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		// здесь мы получаем данные с сервера
+		response.getWriter().append("Served at: ").append(request.getContextPath()); // пишем что-то в ответ клиенту
 		
-		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/views/employeeregister.jsp");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/views/employeeregister.jsp"); // передаём адрес на который мы хотим перевести пользователя
 		dispatcher.forward(request, response);
 		
 	}
@@ -62,7 +62,7 @@ public class EmployeeServlet extends HttpServlet {
 		try {
 			employeeDao.registerEmployee(employee);
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
+			// при ошибке сохранения - сделать форму с информацией об ошибке и делать возврат на форму ввода 
 			e.printStackTrace();
 		}
 		

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+		 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
   
-  <!-- http://localhost:8080/registration-jsp-servlet-jdbc-example/test  -->
+  <!-- http://localhost:8080/registration-jsp-servlet-jdbc-example/test  строка подключения в браузере-->
   <display-name>registration-jsp-servlet-jdbc-example</display-name>
   
-  <servlet>   <!--  //здесь прописан путь к Java-классу -->
+    <servlet>   <!--  //здесь прописан путь к Java-классу -->
         <servlet-name>EmployeeServlet</servlet-name>
         <servlet-class>net.javaguide.registration.controller.EmployeeServlet</servlet-class>
     </servlet>
